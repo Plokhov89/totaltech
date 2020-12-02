@@ -453,9 +453,9 @@ header:before{
    }
     
    .Window > div {
-    width: 90%;
+    width: 60%;
     position: relative;
-    margin: 50% auto;
+    margin: 10% auto;
     padding: 30px 10px 10px;
     border-radius: 10px;
     background: #fff;
@@ -534,13 +534,12 @@ header:before{
    }
     
    .Window2 > div {
-    width: 90%;
+    width: 60%;
     position: relative;
     display: flex;
-    margin: 30% auto;
+    margin: 1% auto;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 2px;
-
    }
     
    .close {
