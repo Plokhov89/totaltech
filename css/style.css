@@ -24,9 +24,10 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color:#f5f7fa;
+    background-image: url(/img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
     margin: 0 auto;
-    background-image: url(./img/background2.jpg);
 }
 
 /*Хедер*/
@@ -118,7 +119,7 @@ header:before{
     font-weight: 300;
     font-family: toxigenesis_bd;
     text-decoration: none;
-    color: honeydew;
+    color: white;
     font-size: 18px;
     vertical-align: text-bottom;   
 }
@@ -142,8 +143,6 @@ header:before{
     width: 100%;
     position: relative;
     height: auto;
-    background-size: auto;
-    background-image: url(./img/bg1.jpg);
 }
 
 .video-container {
@@ -151,6 +150,7 @@ header:before{
     top: 0;
     left:0;
     width: 100%;
+    max-height: 650px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -167,8 +167,6 @@ header:before{
 .company-container {
     height: auto;
     width: 100%;
-    background-size: auto 100% ;
-    background-image: url(./img/bg3.jpg);
     padding-bottom: 20px;
 }
 
@@ -176,7 +174,7 @@ header:before{
     padding-top: 90px;
     font-size: 48px;
     text-align: center;
-    color: honeydew;
+    color: white;
     border-bottom: 2px solid;
 }
 
@@ -202,7 +200,7 @@ header:before{
     padding-right: 50px;
     text-align: justify;
     font-size: 20px;
-    color: honeydew;
+    color: white;
     text-indent: 50px;
 }
 
@@ -211,8 +209,6 @@ header:before{
 .products {
     height: auto;
     width: 100%;
-    background-size: auto 100% ;
-    background-image: url(./img/bg2.jpg);
     padding-bottom: 20px;
 }
 
@@ -220,7 +216,7 @@ header:before{
     padding-top: 90px;
     font-size: 48px;
     text-align: center;
-    color: honeydew;
+    color: white;
     border-bottom: 2px solid;
 }
 
@@ -231,10 +227,11 @@ header:before{
 
 .item {
     font-size: 20px;
-    color: honeydew;
+    color: white;
     display : inline-block;
     vertical-align: top;
     text-align: center;
+    padding-right: 50px;
 }
 
 .products-img {
@@ -251,15 +248,13 @@ header:before{
 .partners-conteiner {
     min-height: 750px;
     width: 100%;
-    background-size: auto 100% ;
-    background-image: url(./img/bg4.jpg);
 }
 
 .partners-title {
     padding-top: 90px;
     font-size: 48px;
     text-align: center;
-    color: honeydew;
+    color: white;
     border-bottom: 2px solid;
 }
 
@@ -275,17 +270,17 @@ header:before{
 }
 
 .partners {
-    display : inline-block;
+    display: inline-block;
     vertical-align: top;
     text-align: center;
     margin-top: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .partners-block {
     width: 400px;
     height: auto;
-    background-color: honeydew;
+    background-color: white;
     border-radius: 10px;
     overflow: auto;
 }
@@ -338,6 +333,46 @@ header:before{
 .gerardi-block {
     padding-top: 10px;
     height: 100px;
+}
+
+.chmt-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.dueci-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.ufs-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.smw-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.bft-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.minglan-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.rwt-block {
+    padding-top: 10px;
+    height: 100px;
+}
+
+.qt-block {
+    padding-top: 10px;
+    height: 90px;
 }
 
 /*Модальное окно по производителям*/
@@ -400,8 +435,6 @@ header:before{
 .certifies {
     height: auto;
     width: 100%;
-    background-size: auto;
-    background-image: url(./img/bg3.jpg);
     padding-bottom: 20px;
 }
 
@@ -416,7 +449,6 @@ header:before{
     display : inline-block;
     vertical-align: top;
     text-align: center;
-    /*padding-left: 50px;*/
     padding-bottom: 30px;
 }
 
@@ -501,8 +533,6 @@ header:before{
 .contacts {
     height: auto;
     width: 100%;
-    background-size: auto 100% ;
-    background-image: url(./img/bg3.jpg); 
 }
 
 #map {
@@ -513,7 +543,7 @@ header:before{
 #address {
     padding-top: 20px;
     font-style: normal;
-    color: honeydew;
+    color: white;
     text-decoration: none;
     text-align: center;
 }
@@ -529,7 +559,7 @@ header:before{
 }
 
 .tel-text {
-    color: honeydew;
+    color: white;
     text-decoration: none;
 }
 
@@ -545,7 +575,7 @@ header:before{
 }
 
 .email-text {
-    color: honeydew;
+    color: white;
     text-decoration: none;
 }
 
@@ -644,7 +674,7 @@ header:before{
 
     .products-link-text {
         font-size: 24px;
-        color: honeydew;
+        color: white;
     }
 
     .products-link-text:hover {
@@ -681,4 +711,20 @@ header:before{
         margin: 0 auto;
     }
 
+    .item {
+        font-size: 20px;
+        color: white;
+        display : inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .partners {
+        display : inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
 }
