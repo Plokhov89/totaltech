@@ -145,6 +145,10 @@ header:before{
     height: auto;
 }
 
+.heroes-h2 {
+    display: none;
+}
+
 .video-container {
     position: relative;
     top: 0;
@@ -158,6 +162,7 @@ header:before{
 }
 
 .video {
+    width: 100%;
     filter: opacity(80%);
     filter: brightness(50%);
 }
@@ -542,20 +547,11 @@ header:before{
 
 #address {
     padding-top: 20px;
+    padding-bottom: 20px;
     font-style: normal;
     color: white;
     text-decoration: none;
     text-align: center;
-}
-
-.address-img {
-    vertical-align: middle;
-    height: 28px;
-}
-
-.telephone {
-    text-align: center;
-    
 }
 
 .tel-text {
@@ -563,25 +559,9 @@ header:before{
     text-decoration: none;
 }
 
-.tel-img {
-    vertical-align: middle;
-    height: 20px;
-}
-
-.email {
-    text-align: center;
-    padding-bottom: 20px;
-    
-}
-
 .email-text {
     color: white;
     text-decoration: none;
-}
-
-.email-img{
-    vertical-align: middle;
-    height: 24px;
 }
 
 /*Футер*/
