@@ -10,7 +10,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    /*pointer-events: none;*/
+    pointer-events: none;
 }
 
 @font-face {
@@ -51,7 +51,7 @@ header:before{
     z-index: 2;
 }
 
-.header_body {
+.header-body {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -59,21 +59,21 @@ header:before{
     align-items: center;
 }
 
-.header_burger.active:before {
+.header-burger.active:before {
     transform: rotate(45deg);
     top: 9px;
 }
 
-.header_burger.active:after {
+.header-burger.active:after {
     transform: rotate(-45deg);
     bottom: 9px;
 }
 
-.header_burger.active span {
+.header-burger.active span {
     transform: scale(0);
 }
 
-.header_burger {
+.header-burger {
     display: none;
 }
 
@@ -115,16 +115,16 @@ header:before{
    padding: 0px 10px; 
 }
 
-.products-link-text {
+.nav-link > a {
     font-weight: 300;
     font-family: toxigenesis_bd;
     text-decoration: none;
     color: white;
     font-size: 18px;
-    vertical-align: text-bottom;   
+    vertical-align: text-bottom;  
 }
 
-.products-link-text:hover, .products-link-text:focus, .products-link-text:active {
+.nav-link > a:hover, .nav-link > a:focus, .nav-link > a:active {
     outline: none;
     color: #5567ab;
 }
@@ -295,7 +295,7 @@ header:before{
     cursor: pointer;
 }
 
-.kyocera-list-block {
+.kyocera-list {
     text-align: justify;
     font-size: 16px;
     font-weight: 300;
@@ -304,7 +304,9 @@ header:before{
     padding-left: 50px;
 }
 
-.about-company-block {
+/* .about-company-block { */
+
+details > p {
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
@@ -443,14 +445,14 @@ header:before{
     padding-bottom: 20px;
 }
 
-.distr-cert-block {
+.certifies-block {
     width: 100%;
     margin-top: 20px;
     list-style: none;
     text-align: center;
 }
 
-.distr-cert-list {
+.certifies-list {
     display : inline-block;
     vertical-align: top;
     text-align: center;
@@ -573,7 +575,7 @@ header:before{
     background-color: #1e2939;
 }
 
-.ft-logo {
+.footer > div {
     display: flex;
     position: relative;
     padding-top: 20px;
@@ -587,11 +589,11 @@ header:before{
         overflow: hidden;
     }
 
-    .header_body {
+    .header-body {
         height: 80px;
     }
 
-    .header_burger {
+    .header-burger {
         display: block;
         position: relative;
         width: 30px;
@@ -599,7 +601,7 @@ header:before{
         z-index: 3;
     }
 
-    .header_burger span {
+    .header-burger span {
         position: absolute;
         background-color: #fff;
         left: 0;
@@ -609,8 +611,8 @@ header:before{
         transition: all 0.3s ease 0s;
     }
 
-    .header_burger:before,
-    .header_burger:after {
+    .header-burger:before,
+    .header-burger:after {
         content: '';
         background-color: #fff;
         position: absolute;
@@ -620,15 +622,15 @@ header:before{
         transition: all 0.3s ease 0s;
     }
 
-    .header_burger:before {
+    .header-burger:before {
         top: 0;
     }
 
-    .header_burger:after {
+    .header-burger:after {
         bottom: 0;
     }
 
-    .header_menu {
+    .header-menu {
         position: fixed;
         top: -100%  ;
         left: 0;
@@ -640,7 +642,7 @@ header:before{
         overflow: auto;
     }
 
-    .header_menu.active {
+    .header-menu.active {
         top: 0;
     }
 
@@ -652,12 +654,12 @@ header:before{
         margin: 20px 0px 20px 50px;
     }
 
-    .products-link-text {
+    .nav-link > a {
         font-size: 24px;
         color: white;
     }
 
-    .products-link-text:hover {
+    .nav-link > a:hover, .nav-link > a:focus {
         color: #001638;
     }
 
